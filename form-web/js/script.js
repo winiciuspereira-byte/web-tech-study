@@ -12,10 +12,15 @@ const lista = document.querySelector(".lista");
  
 button.addEventListener("click", function(event)  {
         event.preventDefault();  
-        console.log(nome.value)
+        const inputValue = nome.value;
+        const templateHTML = `<li>${inputValue}</li>`;
+        console.log(inputValue);
  
         // Incluir itens no HTML
+        lista.innerHTML += `<li>${nome.value}</li>`;
  
+        // Limpando campo
+        nome.value = "";
  
     });
    
