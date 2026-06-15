@@ -17,4 +17,3 @@ if (fruits.includes("abacaxi")) {
 } else {
 	console.log('Nem pera nem abacaxi existem no array "fruits".');
 }
-

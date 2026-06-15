@@ -10,12 +10,16 @@
     <h1>Popup simples</h1>
     <button id="open-popup">Clique aqui</button>
 
-    <div id="popup" class="hidden">
+    <div id="popup" class="hidden" role="dialog" aria-modal="true" aria-labelledby="popup-title">
         <div class="popup-box">
-            <p>Esta é uma mensagem simples.</p>
+            <div class="popup-header">
+                <h2 id="popup-title">Detalhes do modal</h2>
+                <button id="close-popup" class="close-button" aria-label="Fechar popup">×</button>
+            </div>
+            <p>Bem-vindo ao Museu da Nuvem Dourada! Hoje você descobre o segredo de um mapa antigo que leva a uma biblioteca secreta de ideias. Clique em <strong>Saiba mais</strong> para continuar a aventura.</p>
             <div class="popup-actions">
                 <button id="learn-more">Saiba mais</button>
-                <button id="close-popup">Fechar</button>
+                <button id="close-popup-text">Fechar</button>
             </div>
             <p id="more-info" class="hidden">Aqui está mais informação sobre como usar o popup. Você pode fechar quando terminar.</p>
         </div>
